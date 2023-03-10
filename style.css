@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;300;400&family=Noto+Sans+Display:ital,wght@0,500;0,600;1,500;1,600;1,800&display=swap');
+
+:root {
+	--deep-blue: #172339;
+	--gray-blue: #49566D;
+	--alabaster: #F3EDE7;
+	--cultured:#FAF8F6;
+	--indigo:#A060FF;
+	--steel-pink:#CB30E3;
+	--pastel-orange:#FFA84E;
+	--bg-gradient: linear-gradient(to bottom right, #CB30E3, #A060FF, #FFA84E);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Helvetica Neue", sans-serif;
+	outline: none;
+	text-decoration: none;
+}
+
+body {
+	background: var(--cultured);
+	position: relative;
+	max-width: 100%;
+	min-height: 100vh;
+}
+
+.container {
+	max-width: 70%;
+	min-height: 100vh;
+	margin: 0 auto;
+	margin-bottom: 10rem;
+}
+
+/* Header */
+.header {
+	display: flex;
+	max-width: 70%;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.5rem 0;
+}
+
+.request-beta-access {
+	background: transparent;
+	color: var(--deep-blue);
+	padding: .8rem;
+	font-size: .9rem;
+	border: 1px solid var(--deep-blue);
+	border-radius: .3rem;
+	font-weight: 600;
+	transition: .3s ease;
+}
+
+.header .request-beta-access:hover {
+	background-color: var(--deep-blue);
+	color: var(--cultured);
+}
+
+
+/* Solution for Business */
+.section-solution {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.5rem;
+	position: relative;
+	color: var(--deep-blue);
+}
+
+.market-section {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 80%;
+	gap: 2rem;
+	position: relative;
+}
+
+.market-section .heading {
+	width: 100%;
+	diplay: flex;
+	flex-direction: column;
+}
+
+.market-section .info {
+	line-height: 2;
+	padding-right: 20rem;
+}
+
+.market-section .heading h2 {
+	font-size: 3.8rem;
+	font-weight: 100;
+}
+
+.market-section .heading h2 span {
+	font-weight: 900;
+}
+
+.pattern-curved-line {
+	width: 100%;
+	display: flex;
+}
+
+#patternCurvedLineOne {
+	width: 14rem;
+	align-self: end;
+	margin-left: 40%;
+}
+
+.section-solution .image-hero-portrait {
+	height: 30rem;
+	margin-left: -40%;
+}
+
+.image-hero-portrait-mobile {
+	display: none;
+}
+
+#chart-mobile {
+	display: none;
+}
+
+.charts {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	gap: 3rem;
+	text-transform: uppercase;
+}
+
+.chart {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	gap: .2rem;
+}
+
+.chart h3 {
+	font-size: 2.2rem;
+	font-weight: 700;
+}
+
+.chart p {
+	font-size: .7rem;
+	font-weight: 100;
+	letter-spacing: .1rem;
+}
+
+.market-section .request-beta-access {
+	border: none;
+	color: var(--cultured);
+	background: var(--deep-blue);
+	transition: 1s ease;
+}
+
+.market-section .request-beta-access:hover {
+	background: var(--bg-gradient);
+}
+
+/* Testimonial */
+.testimonial {
+	background-color: var(--alabaster);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.testimonial-content {
+	background: var(--deep-blue);
+	width: 70%;
+	margin-top: -12rem;
+	display: flex;
+	gap: 1rem;
+	border-radius: .5rem;
+	color: var(--cultured);
+	padding: 0 4rem;
+}
+
+.testimonial-img {
+	display: flex;
+	position: relative;
+}
+
+#personalImg {
+	z-index: 10;
+	height: 30rem;
+	margin-top: -3rem;
+}
+
+#patternBlur {
+	position: absolute;
+	width: 25rem;
+	height: 25rem;
+	left: -4rem;
+	top: 5rem;
+	z-index: 2;
+}
+
+#patternCurvedLineTwo {
+	width: 3rem;
+	height: 3rem;
+	align-self: center;
+	margin-bottom: 10rem;
+}
+
+.testimonial-review {
+	display: flex;
+	gap: 2rem;
+	align-self: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 2rem;
+}
+
+.testimonial-review h2 {
+	font-weight: 50;
+}
+
+.testimonial-review h2 span {
+	font-weight: 800;
+}
+
+.testimonial-review p {
+	line-height: 2;
+}
+
+.testimonial-name {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.testimonial-name h2 {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.testimonial-name p {
+	/* font-weight: 100; */
+	font-size: .9rem;
+	letter-spacing: .12rem;
+	text-transform: uppercase;
+}
+
+/* Fotter */
+footer {
+	background: var(--alabaster);
+	padding: 3rem 0;
+}
+
+.footer {
+	display: flex;
+	width: 70%;
+	align-items: center;
+	justify-content: space-between;
+	margin: auto;
+}
+
+.footer p {
+	font-size: .8rem;
+	color:	var(--gray-blue);
+}
+
+.footer .social-media {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.footer .social-media a {
+	transform: scale(1);
+	transition: .3s ease;
+}
+
+.footer .social-media a:hover {
+	transform: scale(1.2);
+}
+
+.footer .social-media a img {
+	width: 1.2rem;
+	height: 1.2rem;
+}
+
+@media all and (max-width: 1115px) {
+	.container {
+		max-width: 80%;
+	}
+
+	.market-section .heading h2 {
+			font-size: 3rem;
+		}
+
+		.section-solution .image-hero-portrait {
+			height: 25rem;
+			margin-left: -40%;
+		}
+
+		#patternCurvedLineOne {
+			width: 14rem;
+			align-self: end;
+			margin-left: 35%;
+		}
+
+		.testimonial-content {
+			width: 90%;
+		}
+}
+
+@media all and (max-width: 840px) {
+	.container {
+		max-width: 80%;
+		padding: 0 1.2rem;
+	}
+
+	.market-section {
+		gap: 1.2rem;
+	}
+
+	.market-section .heading h2 {
+			font-size: 2.8rem;
+		}
+
+		.market-section .info {
+			width: 100%;
+			padding-right: 9rem;
+		}
+
+		#patternCurvedLineOne {
+			width: 10rem;
+			margin-left: 45%;
+		}
+
+		.charts {
+			gap: 2rem;
+		}
+
+		.chart h3 {
+			font-size: 2.2rem;
+			font-weight: 600;
+		}
+
+		.chart p {
+			font-size: 1rem;
+			font-weight: 100;
+			letter-spacing: .1rem;
+		}
+		#chart-desktop {
+			display: none;
+		}
+
+		#chart-mobile {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			margin-top: 2rem;
+			margin-bottom: 4rem;
+		}
+
+		.testimonial {
+			margin-top: 15rem;
+		}
+
+		.testimonial-content {
+			justify-content:center;
+			align-items:center;
+			gap: 2rem;
+			flex-direction: column;
+			width: 90%;
+			padding: 0;
+		}
+
+		#personalImg {
+			margin-top: -6rem;
+		}
+
+		#patternCurvedLineTwo {
+			width: 3rem;
+			height: 3rem;
+			align-self: center;
+			margin-bottom: 0;
+		}
+
+		.testimonial-review {
+			justify-content:center;
+			align-items:center;
+			padding: 0 3rem 2rem;
+		}
+
+		.container {
+			margin-bottom: 20rem;
+		}
+}
+
+@media all and (max-width: 750px) {
+	.container {
+		max-width: 90%;
+		padding: 0 1rem;
+	}
+
+	.market-section {
+		gap: 1rem;
+	}
+
+	.market-section .heading h2 {
+			font-size: 2.7rem;
+		}
+
+		#chart-mobile {
+			margin-bottom: 20rem;
+		}
+
+		#patternCurvedLineOne {
+			width: 10rem;
+			margin-left: 45%;
+		}
+}
+
+@media all and (max-width: 650px) {
+	.container {
+		max-width: 100%;
+		padding: 0 .5rem;
+	}
+
+	.market-section {
+		gap: 1rem;
+	}
+
+	.market-section .heading h2 {
+			font-size: 2.7rem;
+		}
+
+		#patternCurvedLineOne {
+			width: 10rem;
+			margin-left: 45%;
+		}
+
+		.testimonial {
+			margin-top: 2rem;
+		}
+
+		.container {
+			margin-bottom: 2rem;
+		}
+
+		.testimonial-name {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		justify-content: center;
+		}
+}
+
+@media all and (max-width: 650px) {
+	.container {
+		max-width: 100%;
+		padding: 0 .5rem;
+	}
+
+	.market-section .heading {
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.market-section .info {
+		width: 100%;
+	}
+
+	.market-section .heading h2 {
+			font-size: 2rem;
+		}
+
+		#patternCurvedLineOne {
+			width: 10rem;
+			margin-left: 45%;
+		}
+}
+
+@media all and (max-width: 570px) {
+	.container {
+		max-width: 100%;
+		padding: 0 1.5rem;
+	}
+
+	.market-section .heading {
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.market-section .info {
+		width: 70%;
+		padding-right: 1.5rem;
+	}
+
+	.market-section .heading h2 {
+			font-size: 2.2rem;
+		}
+
+		#patternCurvedLineOne {
+			width: 7rem;
+			margin-left: 50%;
+		}
+
+		.section-solution .image-hero-portrait {
+			height: 20rem;
+		}
+}
+
+@media all and (max-width: 540px) {
+	.container {
+		max-width: 100%;
+		padding: 0;
+	}
+
+	.section-solution {
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.market-section .heading {
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.market-section .info {
+		width: 100%;
+		padding-right: 1rem;
+	}
+
+	.market-section .heading h2 {
+			font-size: 2rem;
+		}
+
+		#patternCurvedLineOne {
+			width: 7rem;
+			margin-left: 50%;
+		}
+
+		.section-solution .image-hero-portrait {
+			display: none;
+		}
+
+		.image-hero-portrait-mobile {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 2rem 0;
+		}
+
+		.footer {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			gap: 1.2rem;
+		}
+}
