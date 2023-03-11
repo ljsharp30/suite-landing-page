@@ -444,7 +444,7 @@ footer {
 		}
 
 		.testimonial {
-			margin-top: 2rem;
+			margin-top: 17rem;
 		}
 
 		.container {
@@ -520,6 +520,7 @@ footer {
 	.container {
 		max-width: 100%;
 		padding: 0;
+		margin-bottom: 3rem;
 	}
 
 	.section-solution {
@@ -549,6 +550,18 @@ footer {
 
 		.section-solution .image-hero-portrait {
 			display: none;
+		}
+
+		#chart-mobile {
+			align-items: center;
+			justify-content: center;
+			gap: 1.5rem;
+			flex-direction: column;
+		}
+
+		#chart-mobile .chart {
+			align-items: center;
+			justify-content: center;
 		}
 
 		.image-hero-portrait-mobile {
